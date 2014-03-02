@@ -44,15 +44,53 @@ h3 {
 
 .content {
   margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.panel,
+.panel-heading,
+.panel-body {
+  &.-classes {
+    background-color: transparent;
+    // Bootstrap uses a very specific selector here
+    border-color: lighten($pink, 35%) !important;
+  }
+}
+
+.panel-heading {
+  padding: 7px 12px;
+}
+
+.panel-body {
+  &.-classes {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+}
+
+.panel-title {
+  &.-classes {
+    color: $pink;
+    font-size: 13px;
+  }
+  &:before {
+    content: "⦿ ";
+  }
+  &.-open:before {
+    content: "⊝ ";
+  }
 }
 
 .small-logo {
   float: left;
   width: 125px;
   height: 131px;
-  margin: 0 1.5em 1.5em;
+  margin: 0 10px 0px 0;
   max-width: none;
   display: none;
+  border: 2px dashed $pink;
+  padding: 13px;
+  border-radius: 10px;
 }
 
 .big-logo {
