@@ -1,0 +1,115 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+
+$orange: lighten(#F95D00, 15%);
+$green: darken(#88E2BC, 20%);
+$pink: #DF1E65;
+
+body {
+  font-size: 16px;
+  line-height: 1.5em;
+  color: darken($pink, 35%);
+  font-family: 'Oxygen', sans-serif;
+  max-width: 1024px;
+  margin: 1em auto;
+  background-color: lighten($orange, 30%);
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: $pink;
+  font-family: 'Chelsea Market', cursive;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 0.9em;
+}
+
+h2 {
+  font-size: 2.4em;
+  line-height: 0.9em;
+  color: $green;
+}
+
+h3 {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  border-bottom: 3px dashed $pink;
+}
+
+.small-logo {
+  float: right;
+  width: 125px;
+  height: 131px;
+  margin: 0 0 0.5em 1em;
+  max-width: none;
+  display: none;
+}
+
+.big-logo {
+  float: right;
+  width: 310px;
+  height: 325px;
+  max-width: none;
+}
+
+.sun { color:$orange; }
+
+
+.contact-number,
+.contact-email {
+  color: darken($green, 10%);
+  font-family: 'Chelsea Market', cursive;
+}
+
+.contact-details {
+  font-size: 1.2em;
+}
+
+a {
+  color: #F95D00;
+  &:hover {
+    color: darken(#F95D00, 20%);
+  }
+}
+
+small {
+  font-size: 0.7em;
+}
+
+.unicode {
+  font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+    line-height: 0.9em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    line-height: 0.9em;
+    color: $green;
+  }
+
+  h3 {
+    font-size:1.4em;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    border-bottom: 3px solid $pink;
+  }
+
+}
+
